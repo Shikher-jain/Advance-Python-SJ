@@ -1,0 +1,22 @@
+Table of Content:
+
+
+[ * ] What is Python? 
+[ * ] Writing your first Python Program
+[ * ] Setting up Python
+[ * ] Getting Started with Python Programming
+[ * ] Python Input/Output
+[ * ] Python Data Types
+[ * ] Python Operators
+[ * ] Python Conditional Statement
+[ * ] Python Loops
+[ * ] Python Functions
+[  ] Python OOPs Concepts
+[  ] Python Exception Handling
+[  ] Python Packages or Libraries
+[  ] Python Collections
+[  ] Python Database Handling
+[  ] Python vs. Other Programming Languages
+[  ] Learn More about Python with different Applications
+[  ] Python Quiz
+[  ] Python Latest & Upcoming Features

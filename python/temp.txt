@@ -1,0 +1,9 @@
+USER  R P S
+COMP -1 0 1
+R -1  = P R
+P  0  P = S
+S  1  R S =
+
+R = -1
+P =  0
+S =  1
