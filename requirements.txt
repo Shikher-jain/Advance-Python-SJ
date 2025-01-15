@@ -1,0 +1,14 @@
+pandas
+numpy
+matplotlib
+requests
+flask
+django
+beautifulsoup4
+scikit-learn
+pillow
+jupyter
+opencv-python
+fastapi
+flask_sqlalchemy
+flask_restful
