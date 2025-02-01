@@ -1,0 +1,81 @@
+{
+	"folders": [
+		{
+			"name": "Advance-Python-SJ",
+			"path": "."
+		},
+		{
+			"name": "Problem-Solving",
+			"path": "../Problem-Solving"
+		},
+		{
+			"name": "SJ_MAIN",
+			"path": "../SJ_MAIN"
+		},
+		{
+			"name": "PROJECTs",
+			"path": "../PROJECTs"
+		},
+		{
+			"name": "YT-SERIES",
+			"path": "../YT-SERIES"
+		},
+		{
+			"name": "W3-Django",
+			"path": "../W3-Django"
+		},
+		{
+			"name": "Resume-Projects",
+			"path": "../Resume-Projects"
+		},
+		{
+			"name": "WEB",
+			"path": "../WEB"
+		},
+		{
+			"name": "DSA",
+			"path": "../DSA"
+		},
+		{
+			"name": "PYTHON-Projects",
+			"path": "../PYTHON-Projects"
+		},
+		{
+			"name": "Z_IMP",
+			"path": "../Z_IMP"
+		},
+		{
+			"name": "SOFTPRO--ML",
+			"path": "../SOFTPRO--ML"
+		},
+		{
+			"name": "FULL-STACK-SJ",
+			"path": "../FULL-STACK-SJ"
+		},
+		{
+			"name": "Password-Generator",
+			"path": "../Password-Generator"
+		},
+		{
+			"name": "Contact-Book",
+			"path": "../Contact-Book"
+		},
+		{
+			"name": "Bill-Generator",
+			"path": "../Bill-Generator"
+		},
+		{
+			"name": "PYTHON_PROJECT",
+			"path": "../PYTHON_PROJECT"
+		},
+		{
+			"name": "Github_explore",
+			"path": "../Github_explore"
+		},
+		{
+			"name": "CODEVITA--TCS",
+			"path": "../CODEVITA--TCS"
+		}
+	],
+	"settings": {}
+}
