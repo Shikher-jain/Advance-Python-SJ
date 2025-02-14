@@ -1,6 +1,3 @@
-
-
-
 class Student:
     def __init__(self,name,age):  #constructor
         self.name=name
