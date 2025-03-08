@@ -1,34 +1,24 @@
-# python version: 3.8 to 3.11
+import cv2  
 
-import cv2 as cv
-import mediapipe as mp
+# Haarcascade XML file load karo  
+face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
 
-# Initialize MediaPipe Hands
-mp_hands = mp.solutions.hands
-mp_drawing = mp.solutions.drawing_utils
-hands = mp_hands.Hands(min_detection_confidence=0.7, min_tracking_confidence=0.7)
+# Camera open karo  
+cap = cv2.VideoCapture(0)
 
-cap = cv.VideoCapture(0)
-
-while cap.isOpened():
+while True:
     ret, frame = cap.read()
-    if not ret:
-        break
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    faces = face_cascade.detectMultiScale(gray, 1.1, 4)
 
-    rgb_frame = cv.cvtColor(frame, cv.COLOR_BGR2RGB)
+    for (x, y, w, h) in faces:
+        cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
 
-    # Process frame for hand detection
-    result = hands.process(rgb_frame)
-
-    # If hands detected, draw landmarks
-    if result.multi_hand_landmarks:
-        for hand_landmarks in result.multi_hand_landmarks:
-            mp_drawing.draw_landmarks(frame, hand_landmarks, mp_hands.HAND_CONNECTIONS)
-
-    cv.imshow("Hand Detection", frame)
-
-    if cv.waitKey(1) & 0xFF == ord('q'):
+    cv2.imshow("Face Detection", frame)
+    
+    if cv2.waitKey(1) & 0xFF == ord("d"):        
         break
 
 cap.release()
-cv.destroyAllWindows()
+cv2.destroyAllWindows()
+
