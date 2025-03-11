@@ -1,19 +1,12 @@
 import cv2 as cv
 
-# Load the pre-trained face detection model
 face_cascade = cv.CascadeClassifier(cv.data.haarcascades + 'haarcascade_frontalface_default.xml')
-
-
 cap = cv.VideoCapture(0)
-
 while True:
-    
     ret, frame = cap.read()
     if not ret:
         break
-
     gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
-
     # Detect faces
     faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
 
