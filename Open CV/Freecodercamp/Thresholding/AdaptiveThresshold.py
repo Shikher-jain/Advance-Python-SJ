@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread('F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/Cats.jpeg',0)
+img = cv2.imread('F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/Photos/Cats.jpeg',0)
 
 # Apply adaptive thresholding
 adaptive_thresh_mean = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 11, 2)

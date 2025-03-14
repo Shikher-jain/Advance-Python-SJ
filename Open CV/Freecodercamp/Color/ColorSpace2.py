@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread("F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/gatewayOfIndia.jpg")
+img = cv2.imread("F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/Photos/gatewayOfIndia.jpg")
 
 # Get all color conversion flags
 color_spaces = [attr for attr in dir(cv2) if attr.startswith('COLOR_')]

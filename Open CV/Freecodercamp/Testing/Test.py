@@ -11,9 +11,9 @@ img=[
 
 # cv.imshow("IMAGE", img)
 
-img1 = cv.imread("F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/gatewayOfIndia.jpg", 1)
-img0 = cv.imread("F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/gatewayOfIndia.jpg", 0)
-imgn1= cv.imread("F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/gatewayOfIndia.jpg", -1)
+img1 = cv.imread("F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/Photos/gatewayOfIndia.jpg", 1)
+img0 = cv.imread("F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/Photos/gatewayOfIndia.jpg", 0)
+imgn1= cv.imread("F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/Photos/gatewayOfIndia.jpg", -1)
 
 blank = np.zeros(img1.shape[:2],dtype='uint8')
 blank2 = np.zeros(img1.shape[:2],np.uint8)

@@ -9,7 +9,7 @@ def rotation(img, angle,rotPoint=None):
     dimensions=(width,height)
     return cv.warpAffine(img,rotMat,dimensions)
 
-img=cv.imread('F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/gatewayOfIndia.jpg')
+img=cv.imread('F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/Photos/gatewayOfIndia.jpg')
 cv.imshow('Original',img)
 
 for i in range(0,360,45):

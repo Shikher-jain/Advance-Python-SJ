@@ -1,8 +1,8 @@
 import cv2
 import matplotlib.pyplot as plt
 
-img = cv2.imread("F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/gatewayOfIndia.jpg")
-img = cv2.imread("F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/FLO.png")
+img = cv2.imread("F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/Photos/gatewayOfIndia.jpg")
+img = cv2.imread("F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/Photos/FLO.png")
 
 
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)         # Grayscale

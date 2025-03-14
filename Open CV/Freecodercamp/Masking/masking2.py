@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Load Image
-image = cv2.imread(r'F:\SHIKHER-VS\Advance-Python-SJ\Open CV\Freecodercamp\Cats.jpeg')
+image = cv2.imread(r'F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/Photos/Cats.jpeg')
 cv2.imshow("Original Image", image)
 
 # Convert to HSV

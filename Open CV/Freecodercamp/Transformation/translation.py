@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img=cv2.imread('F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/gatewayOfIndia.jpg')
+img=cv2.imread('F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/Photos/gatewayOfIndia.jpg')
 
 if img is None:
     print("Error: Image not found!")

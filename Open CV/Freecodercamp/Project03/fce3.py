@@ -16,7 +16,7 @@ smile_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_smile
 
 # ✅ Mask detection model ko sahi format me load karo  
 try:
-    mask_model = load_model(r"F:\SHIKHER-VS\Advance-Python-SJ\Open CV\Projects\mask_detector.h5")
+    mask_model = load_model(r"F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/Projects03/mask_detector.h5")
   # Ensure correct format
 except Exception as e:
     print(f"Error loading model: {e}")

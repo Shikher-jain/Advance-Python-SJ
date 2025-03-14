@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread('F:\SHIKHER-VS\Advance-Python-SJ\Open CV\Freecodercamp\gatewayOfIndia.jpg')
+img = cv2.imread('F:\SHIKHER-VS\Advance-Python-SJ\Open CV\Freecodercamp\Photos\gatewayOfIndia.jpg')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 X = cv2.Sobel(gray, cv2.CV_64F, 1, 0)

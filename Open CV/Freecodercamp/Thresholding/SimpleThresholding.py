@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread('F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/Cats.jpeg',0)
+img = cv2.imread('F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/Photos/Cats.jpeg',0)
 # Apply simple thresholding
 th, binary_thresh = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
 _, binary_inv_thresh = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY_INV)
