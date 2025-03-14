@@ -7,9 +7,8 @@ while True:
     cv2.imshow('Webcam', frame)
 
     # Agar user 'q' press kare to loop exit ho jaye
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    if cv2.waitKey(1) & 0xFF == ord('d'):
         break
 
 cap.release()
 cv2.destroyAllWindows()
-d
