@@ -41,7 +41,7 @@ def create_train():
                 features.append(faces_roi)
                 labels.append(label)
 
-create_train()
+create_train()   
 print(f'Training done for {len(people)} people.')
 
 # Convert lists to NumPy arrays
@@ -59,3 +59,4 @@ np.save('F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/Face Recognition/
 
 # print(features, labels)
 print(f'No. of features: {len(features)} and No. of  labels: {len(labels)}')
+

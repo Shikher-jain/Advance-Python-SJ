@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>The Simpsons Characters Data | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Image dataset of 20 characters from The Simpsons" />
+    <meta name="keywords" content="arts and entertainment,image,popular culture" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="iR7ueul2IBoOlmqT5UOJpg==" type="text/javascript">
+    window["pageRequestStartTime"] = 1742028342744;
+    window["pageRequestEndTime"] = 1742028342839;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <script nonce="iR7ueul2IBoOlmqT5UOJpg==" id="gsi-client" src="https://accounts.google.com/gsi/client" async defer></script>
+  <script nonce="iR7ueul2IBoOlmqT5UOJpg==">window.KAGGLE_JUPYTERLAB_PATH = "/static/assets/jupyterlab-v4/jupyterlab-index-f271d38db98153fa0082.html";</script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+    <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" id="dynamic-favicon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="iR7ueul2IBoOlmqT5UOJpg==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/alexattia/the-simpsons-characters-dataset" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=2d4e7ec4eb689d926191" />
+
+  
+    
+ 
+      <script nonce="iR7ueul2IBoOlmqT5UOJpg==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="iR7ueul2IBoOlmqT5UOJpg==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="iR7ueul2IBoOlmqT5UOJpg==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/alexattia/the-simpsons-characters-dataset" />
+    <meta property="og:title" content="The Simpsons Characters Data" />
+    <meta property="og:description" content="Image dataset of 20 characters from The Simpsons" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/1408/2525/7bb48509f68b0ac55650022ac77a0b3a/dataset-card.png" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+        <meta name="twitter:creator" content="@alexattia" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+            <script nonce="iR7ueul2IBoOlmqT5UOJpg==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"The Simpsons Characters Data","description":"### Context\n\nAs a big Simpsons fan, I have watched a lot (and still watching) of The Simpson episodes -multiple times each- over the years. I wanted to build a neural network which can recognize characters.  Feel free to check and recommend my Medium post [Part 1 on a classification model][1]  and [Part 2 on a detection model][2]  (Faster R-CNN) about this dataset and what I am doing with it.  You can also find the related [GitHub repo here][3] .\n\n### Content\n\nI am still building this dataset (labeling pictures), I will upload new versions of this dataset. Please check the files there are descriptions and explanations.\n\nFile simpson-set.tar.gz : This is an image dataset: 20 folders (one for each character) with 400-2000 pictures in each folder.\n\nFile simpson-test-set.zip. : Preview of the image dataset\n\nFile weights.best.h5 : Weights computed, in order to predict in Kernels.\n\nFile annotation.txt : Annotation file for bounding boxes for each character\n\n![The 20 characters][4]\n\n### Acknowledgements\n\nIf someone wants to contribute and make this dataset bigger and more relevant, any help will be appreciated.\n\nData is directly taken and labeled from TV show episodes.\n\nFeel free to check and recommend my Medium post [Part 1 on a classification model][1]  and [Part 2 on a detection model][2]  (Faster R-CNN) about this dataset and what I am doing with it.  You can also find the related [GitHub repo here][3] .\n\n# Inspiration\n\nCan you tell the difference between Maggie Simpson and Lisa Simpson?  Was that Lenny Leonard or was that Carl Carlson?\n\n  [1]: https://medium.com/alex-attia-blog/the-simpsons-character-recognition-using-keras-d8e1796eae36\n  [2]: https://medium.com/alex-attia-blog/the-simpsons-characters-recognition-and-detection-part-2-c44f9d5abf37\n  [3]: https://github.com/alexattia/SimpsonRecognition\n  [4]: https://cdn-images-1.medium.com/max/800/1*64laQlCh-57A6AyTXAeRWQ.png","url":"https://www.kaggle.com/alexattia/the-simpsons-characters-dataset","version":4,"keywords":["subject, arts and entertainment","data type, image","subject, culture and humanities, popular culture"],"license":{"@type":"CreativeWork","name":"CC BY-NC-SA 4.0","url":"https://creativecommons.org/licenses/by-nc-sa/4.0/"},"identifier":["1408"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"alexattia","url":"https://www.kaggle.com/alexattia","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/586894-kg.jpg"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/alexattia/the-simpsons-characters-dataset/download?datasetVersionNumber=4","contentSize":"1158208931 bytes"}],"commentCount":8,"dateModified":"2018-04-13T22:55:01.17Z","discussionUrl":"https://www.kaggle.com/alexattia/the-simpsons-characters-dataset/discussion","alternateName":"Image dataset of 20 characters from The Simpsons","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/1408/2525/7bb48509f68b0ac55650022ac77a0b3a/dataset-card.png","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":8},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":25326},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":194051},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":565}]}</script>
+        
+
+  
+    
+
+  
+    
+
+
+    <script nonce="iR7ueul2IBoOlmqT5UOJpg==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="iR7ueul2IBoOlmqT5UOJpg==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="iR7ueul2IBoOlmqT5UOJpg==" src="/static/assets/runtime.js?v=8bc8e429eb9b3f33e2fc"></script>
+  <script nonce="iR7ueul2IBoOlmqT5UOJpg==" src="/static/assets/vendor.js?v=a62013a985d655b5d6e4"></script>
+  <script nonce="iR7ueul2IBoOlmqT5UOJpg==" src="/static/assets/app.js?v=8c26435fddb1a8dd1c3d"></script>
+    <script nonce="iR7ueul2IBoOlmqT5UOJpg==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+<body>
+  <div id="root">
+
+<script nonce="iR7ueul2IBoOlmqT5UOJpg==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="iR7ueul2IBoOlmqT5UOJpg==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    // Always use the production asset in local dev, which is served from GCS. We tried to proxy and / or serve this
+    // in a better way in localhost, but it didn't work out. See b/328073416#comment8 for details.
+    const forceProdHost = window.location.hostname === "localhost";
+    lib.src = `${forceProdHost ? "https://www.kaggle.com" : ""}/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>
