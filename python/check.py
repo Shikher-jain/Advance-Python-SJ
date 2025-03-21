@@ -9,5 +9,6 @@ print(data)
 print(dir(pandas))
 df=pandas.DataFrame(data,index = ["type 1","type 2","type 3","type 4"])
 print(df)
-# display(df)
+# pandas.display(df)
+
 print(df.index)
