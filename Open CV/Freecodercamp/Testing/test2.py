@@ -6,3 +6,9 @@ for i in range(0,10):
         break
 cv.waitKey(0)
 
+
+import cv2
+import cvzone
+import mediapipe as mp
+
+print("All modules installed successfully!")
