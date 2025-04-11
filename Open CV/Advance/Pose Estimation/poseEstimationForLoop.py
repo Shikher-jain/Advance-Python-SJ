@@ -12,7 +12,7 @@ for i in range(4, 7):
     cap = cv2.VideoCapture(path)
     pTime = 0
 
-    while True:
+    while True: 
         success, img = cap.read()
         imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         results = pose.process(imgRGB)
@@ -25,7 +25,8 @@ for i in range(4, 7):
                 h, w, c = img.shape
                 print(id, lm)
                 cx, cy = int(lm.x * w), int(lm.y * h)
-                cv2.circle(img, (cx, cy), 5, (255, 0, 0), cv2.FILLED)
+                
+                cv2.circle(img, (cx, cy), 5, (255, 125, 125),-1)
 
         cTime = time.time()
         fps = 1 / (cTime - pTime)
@@ -33,7 +34,7 @@ for i in range(4, 7):
 
         cv2.putText(img, f"FPS:{str(int(fps))}", (70, 50), cv2.FONT_HERSHEY_PLAIN, 3,(255, 0, 0), 3)
 
-        cv2.imshow("Image {i}", img)
+        cv2.imshow(f"Image {i}", img)
         
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
