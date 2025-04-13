@@ -2,10 +2,11 @@ import cv2
 import time
 import poseEstimationModule as pm
 
-# path ="F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Advance/Pose Estimation/Videos/4.mp4"
-# cap = cv2.VideoCapture(path)
+path ="F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Advance/Pose Estimation/Videos/5.mp4"
+cap = cv2.VideoCapture(path)
 
-cap = cv2.VideoCapture(0)
+# cap = cv2.VideoCapture(0)
+
 pTime = 0
 detector = pm.poseDetector()
 

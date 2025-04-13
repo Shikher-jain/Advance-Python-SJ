@@ -7,7 +7,7 @@ mpPose = mp.solutions.pose
 pose = mpPose.Pose()
 
 
-for i in range(4, 7):
+for i in range(1, 6):
     path =f"F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Advance/Pose Estimation/Videos/{i}.mp4"
     cap = cv2.VideoCapture(path)
     pTime = 0
