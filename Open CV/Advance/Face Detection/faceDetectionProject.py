@@ -1,23 +1,20 @@
 import cv2
-import mediapipe as mp
-import time 
+import mediapipe as mp  
+import time
 
-import handTrackingModule as htm
-
+import faceDetectionModule as fdm
 
 pTime = 0
-cTime = 0
-cap = cv2.VideoCapture(0)
-detector = htm.handDetector()   
+cap =cv2.VideoCapture(0)
+detector = fdm.FaceDetector()
 
-while True:     
+while True:
     success , img = cap.read()
     
-    img = detector.findHands(img)
-    lmList = detector.findPositins(img)
-    if len(lmList) != 0:
-        print(lmList[4])
-
+    img , bboxes = detector.findFaces(img, draw=True)
+    if len(bboxes) != 0:
+        print(bboxes[0])
+    
     cTime = time.time()
     fps = 1 / (cTime - pTime)
     pTime = cTime
@@ -27,3 +24,5 @@ while True:
     
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+cap.release()
+cv2.destroyAllWindows()

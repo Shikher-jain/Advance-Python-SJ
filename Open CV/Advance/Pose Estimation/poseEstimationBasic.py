@@ -16,6 +16,7 @@ pTime = 0
 
 while True:
     success, img = cap.read()
+    img = cv2.flip(img, 1) 
     imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     results = pose.process(imgRGB)
     # print(results.pose_landmarks)

@@ -13,7 +13,7 @@ cTime = 0
 
 while True:
     success , img = cap.read()
-
+    img = cv2.flip(img, 1) 
     imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     results = hands.process(imgRGB)
 
@@ -33,7 +33,7 @@ while True:
 
 
             mpDraw.draw_landmarks(img, handLms, mp_hands.HAND_CONNECTIONS)
-    
+        
     cTime = time.time()
     fps = 1 / (cTime - pTime)
     pTime = cTime
@@ -41,5 +41,5 @@ while True:
     cv2.putText(img, f'FPS: {int(fps)}', (10, 70), cv2.FONT_HERSHEY_PLAIN, 3, (255, 0, 255), 3)
     cv2.imshow("Image", img)
     
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    if cv2.waitKey(33) & 0xFF == ord('q'):
         break
