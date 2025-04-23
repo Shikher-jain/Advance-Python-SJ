@@ -1,7 +1,10 @@
 import cv2
 import time
+path = r'F:\SHIKHER-VS\Regular\Advance-Python-SJ\Open CV\Advance\Face\Videos\1.mp4'
+cap = cv2.VideoCapture(path)
+cap.set(3, 320) 
+cap.set(4, 240) 
 
-cap = cv2.VideoCapture(0)
 pTime = 0
 
 while True:
