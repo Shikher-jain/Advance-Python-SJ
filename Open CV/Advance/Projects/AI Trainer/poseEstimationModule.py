@@ -5,7 +5,7 @@ import math
 
 class poseDetector():
     
-    def __init__(self, mode=False, upBody=False, smooth=True, detectionCon=0.5, trackCon=0.5):
+    def __init__(self, mode=False, upBody=False, smooth=True, detectionCon=0.75, trackCon=0.5):
         self.mode = mode
         self.upBody = upBody
         self.smooth = smooth    
@@ -50,18 +50,21 @@ class poseDetector():
         if angle < 0:
             angle += 360
         
-        # print(angle)
+        print(angle)
         
-        # Draw
         if draw:
-            cv2.line(img, (x1, y1), (x2, y2), (255, 255, 255), 3)
-            cv2.line(img, (x3, y3), (x2, y2), (255, 255, 255), 3)
+            cv2.line(img, (x1, y1), (x2, y2), (0, 0, 255), 4)
+            cv2.line(img, (x3, y3), (x2, y2), (0, 0, 255), 4)
+            cv2.line(img, (x1, y1), (x2, y2), (255,255,255), 2)
+            cv2.line(img, (x3, y3), (x2, y2), (255,255,255), 2)
+            
             cv2.circle(img, (x1, y1), 10, (0, 0, 255), cv2.FILLED)
             cv2.circle(img, (x1, y1), 15, (0, 0, 255), 2)
             cv2.circle(img, (x2, y2), 10, (0, 0, 255), cv2.FILLED)
             cv2.circle(img, (x2, y2), 15, (0, 0, 255), 2)
             cv2.circle(img, (x3, y3), 10, (0, 0, 255), cv2.FILLED)
             cv2.circle(img, (x3, y3), 15, (0, 0, 255), 2)
+
             cv2.putText(img, str(int(angle)), (x2 - 50, y2 + 50),cv2.FONT_HERSHEY_PLAIN, 2, (0, 0, 255), 2)
         return angle
 
@@ -89,6 +92,11 @@ def main():
             print(lmList[0]) #0 to 32 
             cv2.circle(img, (lmList[0][1], lmList[0][2]), 10, (255,0 , 255), -1)
         
+            detector.findAngle(img, 11, 13, 15, draw=True)  # Left Arm
+            # detector.findAngle(img, 12, 14, 16, draw=True)  # Right Arm
+            # detector.findAngle(img, 23, 25, 27, draw=True)  # Left Leg  
+            # detector.findAngle(img, 24, 26, 28, draw=True)  # Right Leg
+
         cTime = time.time()
         fps = 1 / (cTime - pTime)
         pTime = cTime
@@ -101,4 +109,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
