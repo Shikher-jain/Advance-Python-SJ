@@ -11,7 +11,10 @@ cap.set(3, wCam)  # Set width
 cap.set(4, hCam)  # Set height
 pTime = 0
 
-folderPath = "F:/SHIKHER-VS/Regular/Advance-Python-SJ/Open CV/Advance/Projects/FingersCounter/Image"
+
+# folderPath = "F:/SHIKHER-VS/Regular/Advance-Python-SJ/Open CV/Advance/Projects/FingersCounter/Image"
+
+folderPath = os.path.dirname(os.path.abspath(__file__)) +"/Image"
 myList = os.listdir(folderPath)
 print(myList)
 

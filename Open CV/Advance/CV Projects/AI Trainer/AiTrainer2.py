@@ -1,10 +1,10 @@
-from calendar import c
 import cv2
 import numpy as np
 import poseEstimationModule as pm
 import time
+import os
 
-path = "F:/SHIKHER-VS/Regular/Advance-Python-SJ/Open CV/Advance/Projects/AI Trainer/Videos/08.mp4"
+path = os.path.dirname(os.path.abspath(__file__)) +"\\Videos\\08.mp4"
 cap = cv2.VideoCapture(path)
 
 detector = pm.poseDetector()
