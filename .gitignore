@@ -4,6 +4,7 @@ venv/
 myenv/
 myenv310/
 
+
 # Ignore Python cache
 __pycache__/
 *.pyc

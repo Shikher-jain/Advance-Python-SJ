@@ -3,10 +3,10 @@
 import cv2 as cv
 import numpy as np
 import os
-
+   
 # Load trained face recognizer
 face_recognizer = cv.face.LBPHFaceRecognizer_create()
-face_recognizer.read('F:/SHIKHER-VS/Advance-Python-SJ/Open CV/Freecodercamp/Face Recognition/face_trained.yml')
+face_recognizer.read(r'F:\SHIKHER-VS\Regular\Advance-Python-SJ\Open CV\Freecodercamp\Face Recognition\face_trained.yml')
 
 # Load Haar Cascade
 haar_cascade = cv.CascadeClassifier(cv.data.haarcascades + 'haarcascade_frontalface_default.xml')
