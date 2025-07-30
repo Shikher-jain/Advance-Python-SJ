@@ -1,0 +1,24 @@
+# Image files
+*.png
+*.jpeg
+*.jpg
+# Python virtual environments
+myenv/
+myenv310/
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+# AutoPy-related temp files (if any)
+autopy/
+# IDE/editor files (optional but recommended)
+.vscode/
+*.code-workspace
+# OS-specific files
+.DS_Store
+Thumbs.db
+# Git
+*.log
+*.swp
+*.swo
+# 11674/
